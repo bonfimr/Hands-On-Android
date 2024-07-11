@@ -998,6 +998,7 @@ public class ChooseLockGeneric extends SettingsActivity {
                     case NONE:
                     case SWIPE:
                     case PATTERN:
+                    case DEVTITANS:
                     case PIN:
                     case PASSWORD:
                     case MANAGED:

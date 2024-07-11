@@ -33,6 +33,9 @@ public enum ScreenLockType {
     PATTERN(
             DevicePolicyManager.PASSWORD_QUALITY_SOMETHING,
             "unlock_set_pattern"),
+    DEVTITANS(
+            DevicePolicyManager.PASSWORD_QUALITY_SOMETHING_DEVTITANS,
+            "unlock_set_devtitans"),
     PIN(
             DevicePolicyManager.PASSWORD_QUALITY_NUMERIC,
             DevicePolicyManager.PASSWORD_QUALITY_NUMERIC_COMPLEX,
@@ -79,6 +82,8 @@ public enum ScreenLockType {
      */
     public static ScreenLockType fromQuality(int quality) {
         switch (quality) {
+            case DevicePolicyManager.PASSWORD_QUALITY_SOMETHING_DEVTITANS:
+                return ScreenLockType.DEVTITANS;
             case DevicePolicyManager.PASSWORD_QUALITY_SOMETHING:
                 return ScreenLockType.PATTERN;
             case DevicePolicyManager.PASSWORD_QUALITY_NUMERIC:
